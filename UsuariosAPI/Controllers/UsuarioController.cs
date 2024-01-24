@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using UsuariosAPI.Data.DTOs;
 
 namespace UsuariosAPI.Controllers;
 
@@ -7,7 +8,7 @@ namespace UsuariosAPI.Controllers;
 public class UsuarioController : ControllerBase
 {
     [HttpPost]
-    public IActionResult CadastraUsuario()
+    public IActionResult CadastraUsuario(CreateUsuarioDTO dto)
     {
         throw new NotImplementedException();
     }
